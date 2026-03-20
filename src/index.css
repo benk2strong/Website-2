@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Manrope:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-headline: "Noto Serif", serif;
+  --font-body: "Manrope", sans-serif;
+  --font-label: "Manrope", sans-serif;
+
+  --color-forest-dark: #1a2e1a;
+  --color-forest-light: #3a5a40;
+  --color-forest-bright: #40916c; /* Brighter forested green */
+  --color-background: #fbf9f4;
+  --color-surface: #fbf9f4;
+  --color-surface-container: #efeee6;
+  --color-surface-container-low: #f5f4ed;
+  --color-surface-container-high: #e8e9e0;
+  --color-surface-container-highest: #e2e3d9;
+  --color-on-surface: #31332c;
+  --color-on-surface-variant: #5e6058;
+  --color-primary: #635d5a;
+  --color-secondary: #56652c;
+  --color-tertiary: #8b5033;
+  --color-tertiary-container: #fdaf8b;
+}
+
+@variant dark (&:where(.dark, .dark *));
+
+.dark {
+  --color-forest-dark: #24211F; /* Deep charcoal brown for header */
+  --color-background: #2E2A27; /* Primary dark from palette */
+  --color-surface: #2E2A27;
+  --color-surface-container: #3A3531;
+  --color-surface-container-low: #2E2A27;
+  --color-surface-container-high: #46413D;
+  --color-surface-container-highest: #524D49;
+  --color-on-surface: #F9F7F2; /* Neutral cream from palette */
+  --color-on-surface-variant: #BDB6B2;
+  --color-primary: #8A9A5B; /* Secondary sage from palette */
+  --color-secondary: #C07B5B; /* Tertiary terracotta from palette */
+  --color-tertiary: #F9F7F2;
+  --color-tertiary-container: #46413D;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-surface font-body;
+  }
+}
