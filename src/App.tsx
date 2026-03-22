@@ -72,7 +72,29 @@ export default function App() {
     }
     return false;
   });
-  const [activeTab, setActiveTab] = useState("home");
+  const [activeTab, setActiveTab] = useState(() => {
+    const hash = window.location.hash.replace('#', '');
+    return ['home', 'work', 'writing'].includes(hash) ? hash : 'home';
+  });
+
+  useEffect(() => {
+    const newHash = activeTab === 'home' ? '' : `#${activeTab}`;
+    const currentHash = window.location.hash.replace('#', '');
+    const currentTab = currentHash || 'home';
+    if (currentTab !== activeTab) {
+      window.history.pushState(null, '', `${window.location.pathname}${newHash}`);
+    }
+    window.scrollTo(0, 0);
+  }, [activeTab]);
+
+  useEffect(() => {
+    const handlePopState = () => {
+      const hash = window.location.hash.replace('#', '');
+      setActiveTab(['home', 'work', 'writing'].includes(hash) ? hash : 'home');
+    };
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
 
   useEffect(() => {
     const root = window.document.documentElement;
