@@ -115,7 +115,7 @@ export default function App() {
       <nav className="fixed top-0 w-full z-50 bg-forest-light/95 dark:bg-forest-dark/95 backdrop-blur-md border-b border-white/10">
         <div className="flex justify-between items-center max-w-7xl mx-auto px-8 py-6">
           <span className="text-2xl font-headline italic text-white tracking-tighter cursor-pointer" onClick={() => setActiveTab("home")}>
-            The Editorial Investor
+            Chris Giron
           </span>
           <div className="hidden md:flex gap-10 items-center">
             <button 
@@ -188,11 +188,11 @@ export default function App() {
                   className="flex-1"
                 >
                   <h1 className="font-headline text-5xl md:text-7xl text-on-surface leading-[1.1] tracking-tight mb-8">
-                    Hi, I'm Chris Giron. <br />
-                    <span className="italic font-normal text-forest-bright">Growth Architect & Investor.</span>
+                    Hi, I'm <span className="italic font-normal text-forest-bright">Chris Giron.</span> <br />
+                    <span className="italic font-normal text-forest-bright">Investor.</span>
                   </h1>
                   <p className="text-xl md:text-2xl text-on-surface-variant max-w-2xl leading-relaxed">
-                    I back visionary founders with unique ideas at key growth inflection points. Historically focused on B2B SaaS and consumer internet companies.
+                    I invest in and support brands at key inflection points shaping the way we live our everyday lives.
                   </p>
                   <div className="mt-8 flex gap-4">
                     <button onClick={() => setActiveTab("work")} className="bg-forest-light text-white px-6 py-3 rounded-sm font-label hover:bg-forest-bright transition-colors">
@@ -254,19 +254,19 @@ export default function App() {
                 <div className="flex flex-col gap-4">
                   <h3 className="font-headline text-2xl italic">The Philosophy</h3>
                   <p className="text-on-surface-variant leading-relaxed">
-                    "Scale is not the goal; longevity is. Growth must be rooted in human behavior and operational rigor."
+                    Supporting brands that impact us day to day.
                   </p>
                 </div>
                 <div className="flex flex-col gap-4">
                   <h3 className="font-headline text-2xl italic">The Focus</h3>
                   <p className="text-on-surface-variant leading-relaxed">
-                    B2B SaaS, Consumer Internet, and the evolution of 'Third Spaces' in Hospitality and F&B.
+                    Food & Beverage, Consumer Brands, and Consumer Technology.
                   </p>
                 </div>
                 <div className="flex flex-col gap-4">
                   <h3 className="font-headline text-2xl italic">The Location</h3>
                   <p className="text-on-surface-variant leading-relaxed">
-                    Based in New York City, operating globally.
+                    New York City & Boston
                   </p>
                 </div>
               </div>
@@ -351,7 +351,7 @@ export default function App() {
                 <span className="text-xs font-label uppercase tracking-[0.3em] text-forest-bright mb-4 block">Latest from Substack</span>
                 <h3 className="font-headline text-3xl mb-6 max-w-2xl">The Future of Third Spaces: Why Hospitality is the New Tech</h3>
                 <p className="text-on-surface-variant mb-8 max-w-xl leading-relaxed">
-                  Exploring how physical spaces are evolving in an AI-native world, and why the "human touch" is becoming the ultimate premium asset.
+                  Exploring how physical spaces are evolving in an AI-native world, and why the human touch is becoming the ultimate premium asset.
                 </p>
                 <a 
                   href="https://substack.com/@chgi121" 
@@ -404,8 +404,8 @@ export default function App() {
       <footer className="bg-forest-dark w-full py-20 px-8">
         <div className="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto gap-12">
           <div className="flex flex-col items-center md:items-start gap-4">
-            <span className="text-lg font-headline italic text-white">The Editorial Investor</span>
-            <p className="font-label text-xs uppercase tracking-widest text-white/50">© 2024 The Editorial Investor. NYC Based.</p>
+            <span className="text-lg font-headline italic text-white">Chris Giron</span>
+            <p className="font-label text-xs uppercase tracking-widest text-white/50">© 2025 Chris Giron</p>
           </div>
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
             <a href="https://substack.com/@chgi121" target="_blank" rel="noopener noreferrer" className="font-label text-sm uppercase tracking-widest text-white/80 hover:text-white transition-opacity border-b border-white/10 hover:border-white/40">Substack</a>
